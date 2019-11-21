@@ -19,6 +19,6 @@ print(a)
 
 while True:
     x = float(input("podaj x: "))
-    print("logarytm a z x = {}".format(logexp.logax(a)))
+    print("logarytm a z x = {}".format(logexp.logax(x)))
     print("mnozenie a*x = {}".format(logexp.ax(x)))
     print("by zamknac wcisnij ctrl d :) ")
