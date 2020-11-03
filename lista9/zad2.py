@@ -17,7 +17,6 @@ class Tests(unittest.TestCase):
     new_mac = [[1, -1, 2], [3, 0, -4], [2, 3, 5]]
     a = np.array(new_mac)
 
-
     def test_czy_liczb(self):
         for row in self.new_mac:
             for col in row:
@@ -29,16 +28,14 @@ class Tests(unittest.TestCase):
                 """
                 self.assertIsInstance(col, (int, float))
 
-        
     def test_rozmiaru(self):
         col_counter = 0
-        row_counter = 0 
+        row_counter = 0
         for row in self.new_mac:
             for col in row:
                 col_counter +=1
             row_counter +=1
         self.assertEqual(col_counter/row_counter, row_counter)
-    
 
     def testDET(self):
         normal_det = znajdowanieDET(self.a)
